@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp">
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="190dp"
+        android:layout_height="160dp"
+        android:src="@drawable/carlist"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tvname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Porsche 911 Turbo"
+        android:textSize="19sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/ivImage"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tvdetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full Details"
+        android:textStyle="normal"
+        android:textColor="@color/navey_blue"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvname"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tvseat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2 seats"
+        android:textSize="18sp"
+        android:textColor="@color/navey_blue"
+        app:layout_constraintStart_toEndOf="@+id/ivImage"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="60dp"
+        android:drawableLeft="@drawable/person"
+        android:drawableTint="@color/navey_blue"
+        android:drawablePadding="10dp"
+        />
+
+    <Button
+        android:id="@+id/btbook"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Book Now"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:backgroundTint="@color/navey_blue"
+        app:layout_constraintTop_toBottomOf="@id/tvseat"
+        app:layout_constraintStart_toEndOf="@+id/tvdetails"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="150dp"
+        />
+
+    <TextView
+        android:id="@+id/tvprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs.5000/day"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/btbook"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvdetails"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+
+        />
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

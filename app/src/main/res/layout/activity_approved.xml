@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4DC0C0C0"
+    tools:context=".ApprovedActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/box"
+        android:layout_width="545dp"
+        android:layout_height="65dp"
+        android:background="@color/navey_blue"
+        android:drawableStart="@drawable/arrow_back"
+        android:drawableLeft="@drawable/arrow_back"
+        android:drawablePadding="30dp"
+        android:paddingLeft="10dp"/>
+
+
+
+    <TextView
+        android:id="@+id/approved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get approved to drive"
+        android:textColor="@color/navey_blue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/box"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/approved_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/approved"
+        android:text="Since,this is your first ride,you will need to provide us with some information before you can check out."
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/details"
+        android:layout_width="360dp"
+        android:layout_height="340dp"
+        android:layout_below="@id/approved_text"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/account_circle"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <TextView
+            android:id="@+id/photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile photo"
+            android:textColor="@color/navey_blue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="25dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Our host will use it to identify you at pickup"
+            android:textSize="17sp"
+            android:layout_marginTop="52dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/account_circle"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <TextView
+            android:id="@+id/license"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver's license"
+            android:textColor="@color/navey_blue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="110dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You must have a valid driver's license to book on GetWheels."
+            android:textSize="17sp"
+            android:layout_marginTop="137dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/payment"
+            android:layout_marginTop="195dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <TextView
+            android:id="@+id/pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment method"
+            android:textColor="@color/navey_blue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="195dp"
+            />
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You won't be charged until you book your vehicle."
+            android:textSize="17sp"
+            android:layout_marginTop="226dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/black"
+            />
+    </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/ok2"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="Continue"
+                android:backgroundTint="@color/navey_blue"
+                android:textColor="@color/white"
+                android:layout_marginTop="180dp"
+                android:layout_below="@id/details"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:textSize="17sp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

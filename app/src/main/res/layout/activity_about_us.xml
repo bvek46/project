@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUsActivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        style="@style/Theme.AppCompat.Light.NoActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/menu"
+        android:background="@color/navey_blue"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        android:layout_alignParentBottom="true"
+        />
+    <TextView
+        android:id="@+id/box"
+        android:layout_width="545dp"
+        android:layout_height="65dp"
+        android:background="@color/navey_blue"
+        android:drawableStart="@drawable/arrow_back"
+        android:drawableLeft="@drawable/arrow_back"
+        android:drawablePadding="30dp" />
+
+    <TextView
+        android:id="@+id/about_us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="14dp"
+        android:text="About Us"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/getwheels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Wheels"
+        android:textColor="@color/navey_blue"
+        android:textSize="20sp"
+        android:layout_below="@id/about_us"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        />
+
+    <TextView
+        android:id="@+id/offer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/local_offer"
+        android:drawableLeft="@drawable/local_offer"
+        android:layout_below="@id/getwheels"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/offer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compare offers from 100+ cars on a single platform."
+        android:layout_below="@id/getwheels"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="90dp"/>
+
+    <TextView
+        android:id="@+id/mileage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/blue_car"
+        android:drawableLeft="@drawable/blue_car"
+        android:layout_below="@id/offer"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:textSize="35dp"/>
+
+    <TextView
+        android:id="@+id/offer_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All prices include standard mileage limit and basic insurance."
+        android:layout_below="@id/offer_text"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="90dp"/>
+
+    <TextView
+        android:id="@+id/verified"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/blue_circle"
+        android:drawableLeft="@drawable/blue_circle"
+        android:layout_below="@id/mileage"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:textSize="35dp"/>
+
+    <TextView
+        android:id="@+id/verified_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verified car listings are authenticated by us for genuine pictures."
+        android:layout_below="@id/offer_text1"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="90dp"/>
+
+    <TextView
+        android:id="@+id/safety"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/security"
+        android:drawableLeft="@drawable/security"
+        android:layout_below="@id/verified"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:textSize="35dp"/>
+
+
+    <TextView
+        android:id="@+id/safety_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All our vehicles observe COVID safe measures at the time of delivery."
+        android:layout_below="@id/verified_text"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="90dp"/>
+
+    <TextView
+        android:id="@+id/renting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/safety"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:drawableStart="@drawable/blue_car"
+        android:drawableLeft="@drawable/blue_car"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/renting_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Happing Renting!"
+        android:layout_below="@id/safety_text"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="90dp"/>
+
+
+</RelativeLayout>

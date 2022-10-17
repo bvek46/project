@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4DC0C0C0"
+    tools:context=".list">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        style="@style/Theme.AppCompat.Light.NoActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/menu"
+        android:background="@color/navey_blue"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        android:layout_alignParentBottom="true"
+        />
+
+    <TextView
+        android:id="@+id/box"
+        android:layout_width="545dp"
+        android:layout_height="65dp"
+        android:background="@color/navey_blue"
+        android:drawableStart="@drawable/arrow_back"
+        android:drawableLeft="@drawable/arrow_back"
+        android:drawablePadding="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="14dp"
+        android:text="My bookings"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/tvCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Cars"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:layout_marginTop="120dp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvCar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvCar" />
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ocem.getwheels">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="GetWheels"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GetWheels"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".CarListActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".dateActivity"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".booking_list_item"
+            android:exported="false" />
+        <activity
+            android:name=".list"
+            android:exported="false" />
+        <activity
+            android:name=".notifications"
+            android:exported="false" />
+        <activity
+            android:name=".Bookingconfirmed"
+            android:exported="false" />
+        <activity
+            android:name=".FrontPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".welcome_pageActivity1"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".myprofileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".loginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".locationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IdentificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".edit_profileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DescriptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".delivery_paymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bookingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".booking_detailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ApprovedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AboutUsActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

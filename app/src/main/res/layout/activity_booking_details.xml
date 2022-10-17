@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4DC0C0C0"
+    tools:context=".booking_detailsActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/box"
+                android:layout_width="545dp"
+                android:layout_height="65dp"
+                android:background="@color/navey_blue"
+                android:drawableStart="@drawable/arrow_back"
+                android:drawableLeft="@drawable/arrow_back"
+                android:drawablePadding="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="14dp"
+                android:text="Booking Details"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/booked"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="80dp"
+                android:text="Booked vehicle"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="145dp"
+                    android:background="@color/white" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/car"
+                android:layout_width="180dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="180dp"
+                android:src="@drawable/carlist" />
+
+
+            <TextView
+                android:id="@+id/car1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="198dp"
+                android:layout_marginTop="190dp"
+                android:text="Porsche 911 Turbo"
+                android:textColor="@color/navey_blue"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/price1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/car1"
+                android:layout_marginLeft="199dp"
+                android:layout_marginTop="5dp"
+                android:text="Jun 22,10:00AM-Jun 25,10:00AM"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="152dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/price1"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="37dp"
+                android:backgroundTint="@color/navey_blue"
+                android:shadowRadius="30"
+                android:text="Cancel"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="400dp"
+                    android:background="@color/white" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/car"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="100dp"
+                android:text="Address:"
+                android:textColor="@color/black"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/pulchowk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/car"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="102dp"
+                android:text="Pulchowk"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/address"
+                android:layout_marginTop="90dp"
+                android:layout_marginRight="20dp"
+                android:drawableStart="@drawable/ic_baseline_phone_in_talk_24"
+                android:drawableLeft="@drawable/ic_baseline_phone_in_talk_24"
+                android:drawablePadding="40dp"
+                android:background="#80808080"
+                android:hint="Enter number"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/edit_text1"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/edit_text"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableStart="@drawable/ic_baseline_email_24"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:drawablePadding="40dp"
+                android:background="#80808080"
+                android:hint="Email address"
+                android:textSize="17sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="700dp"
+                    android:background="@color/white" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment option"
+                android:textSize="23dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/edit_text1"
+                android:layout_marginTop="130dp"
+                android:layout_marginLeft="30dp" />
+
+            <ImageView
+                android:layout_width="155dp"
+                android:layout_height="120dp"
+                android:layout_below="@id/edit_text1"
+                android:layout_marginTop="90dp"
+                android:layout_marginLeft="230dp"
+                android:src="@drawable/cod"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="930dp"
+                    android:background="@color/white" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/subtotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subtotal"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/payment"
+                android:layout_marginTop="130dp"
+                android:layout_marginLeft="30dp"
+                />
+
+            <TextView
+                android:id="@+id/subtotal1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs.7,500"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/payment"
+                android:layout_marginTop="135dp"
+                android:layout_marginLeft="300dp"
+                />
+
+            <TextView
+                android:id="@+id/shipping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shipping fee"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/subtotal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                />
+
+            <TextView
+                android:id="@+id/shipping1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs.400"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/subtotal1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="311dp"
+                />
+
+            <TextView
+                android:id="@+id/discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shipping fee discount"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/shipping"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                />
+
+            <TextView
+                android:id="@+id/discount1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-Rs.400"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/shipping1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="310dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total:"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_below="@id/discount1"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="265dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs.7,500"
+                android:textColor="@color/navey_blue"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_below="@id/discount1"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="315dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

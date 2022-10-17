@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4DC0C0C0"
+    tools:context=".notifications"
+    tools:ignore="ExtraText">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        style="@style/Theme.AppCompat.Light.NoActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/menu"
+        android:background="@color/navey_blue"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        android:layout_alignParentBottom="true"
+        />
+
+    <TextView
+        android:id="@+id/box"
+        android:layout_width="545dp"
+        android:layout_height="65dp"
+        android:background="@color/purple_700"
+        android:drawableStart="@drawable/ic_baseline_arrow_back_ios_24"
+        android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_24"
+        android:drawablePadding="30dp"
+        android:paddingLeft="10dp"
+        android:text="Notifications"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:paddingTop="28dp"
+        android:textColor="@color/white"
+        />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="65dp"
+            android:background="#4DFFFFFF"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/firstnot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:paddingTop="20dp"
+        android:text="You have the best choice"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="80dp"
+
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Have another look at briefs item you were checking out earlier"
+        android:textSize="18sp"
+        android:layout_below="@+id/firstnot"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="230dp"
+            android:background="#4DFFFFFF" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15% OFF"
+        android:textColor="#FF5722"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="140dp"
+        />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="300dp"
+        android:background="#4DAEA7A7" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Have look at briefs items you were checking out earlier"
+        android:textSize="18sp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@+id/off"
+        android:paddingTop="16dp"/>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_marginTop="400dp"
+            android:background="#4DFFFFFF"
+
+
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="420dp"
+        android:drawableLeft="@drawable/notifications"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Best View"
+        android:layout_marginTop="434dp"
+        android:layout_marginLeft="120dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:src="@drawable/audi"
+        android:layout_marginTop="480dp"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

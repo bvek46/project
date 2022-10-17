@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4DC0C0C0"
+    tools:context=".Bookingconfirmed"
+    tools:ignore="ExtraText">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_baseline_cloud_done_24" />
+
+
+    <TextView
+        android:id="@+id/Confirmed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="200dp"
+        android:text="Confirmed!"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="280dp"
+        android:text="Please check your email for more details." />
+
+
+    <Button
+        android:id="@+id/bthome"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:width="250dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="75dp"
+        android:text="Back to home"
+        android:textColor="@color/white"
+        android:background="@color/purple_700"
+        />
+
+
+
+    />
+
+</RelativeLayout>
+

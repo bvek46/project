@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4DC0C0C0"
+    tools:context=".bookingsActivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        style="@style/Theme.AppCompat.Light.NoActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/menu"
+        android:background="@color/navey_blue"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        android:layout_alignParentBottom="true"
+        />
+
+    <TextView
+        android:id="@+id/box"
+        android:layout_width="545dp"
+        android:layout_height="65dp"
+        android:background="@color/navey_blue"
+        android:drawableStart="@drawable/arrow_back"
+        android:drawableLeft="@drawable/arrow_back"
+        android:drawablePadding="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="14dp"
+        android:text="My bookings"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_marginTop="86dp"
+            android:background="@color/white" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/car"
+        android:layout_width="180dp"
+        android:layout_height="145dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/carlist" />
+
+    <TextView
+        android:id="@+id/car1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="120dp"
+        android:text="Porsche 911 Turbo"
+        android:textColor="@color/navey_blue"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/cod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/car1"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="5dp"
+        android:text="Payment method:COD"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+
+    <TextView
+        android:id="@+id/paid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cod"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="5dp"
+        android:text="Status:Paid"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/billing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paid"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="20dp"
+        android:text="Billing Total:"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/billing1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paid"
+        android:layout_marginLeft="315dp"
+        android:layout_marginTop="20dp"
+        android:text="Rs.5,000"
+        android:textColor="@color/navey_blue"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/billing1"
+        android:layout_marginLeft="245dp"
+        android:layout_marginTop="37dp"
+        android:backgroundTint="@color/navey_blue"
+        android:shadowRadius="30"
+        android:text="View Details"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <!--            <LinearLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:orientation="vertical">-->
+
+    <!--                <TextView-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="260dp"-->
+    <!--                    android:layout_marginTop="386dp"-->
+    <!--                    android:background="@color/white" />-->
+    <!--            </LinearLayout>-->
+
+
+    <!--            <ImageView-->
+    <!--                android:id="@+id/cars"-->
+    <!--                android:layout_width="180dp"-->
+    <!--                android:layout_height="145dp"-->
+    <!--                android:layout_below="@+id/car"-->
+    <!--                android:layout_marginLeft="15dp"-->
+    <!--                android:layout_marginTop="150dp"-->
+    <!--                android:src="@drawable/bookings" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/car2"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="210dp"-->
+    <!--                android:layout_below="@id/button1"-->
+    <!--                android:layout_marginTop="80dp"-->
+    <!--                android:text="Toyota Hilux 2021"-->
+    <!--                android:textColor="@color/navey_blue"-->
+    <!--                android:textSize="19sp" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/cod1"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_below="@+id/car2"-->
+    <!--                android:layout_marginLeft="210dp"-->
+    <!--                android:layout_marginTop="5dp"-->
+    <!--                android:text="Payment method:COD"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:textSize="17sp" />-->
+
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/paid1"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_below="@+id/cod1"-->
+    <!--                android:layout_marginLeft="210dp"-->
+    <!--                android:layout_marginTop="5dp"-->
+    <!--                android:text="Status:Paid"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:textSize="17sp" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/billing2"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_below="@+id/paid1"-->
+    <!--                android:layout_marginLeft="210dp"-->
+    <!--                android:layout_marginTop="20dp"-->
+    <!--                android:text="Billing Total:"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:textSize="17sp" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/billing3"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_below="@+id/paid1"-->
+    <!--                android:layout_marginLeft="315dp"-->
+    <!--                android:layout_marginTop="20dp"-->
+    <!--                android:text="Rs.7,500"-->
+    <!--                android:textColor="@color/navey_blue"-->
+    <!--                android:textSize="17sp"-->
+    <!--                android:textStyle="bold" />-->
+
+    <!--            <Button-->
+    <!--                android:id="@+id/button"-->
+    <!--                android:layout_width="165dp"-->
+    <!--                android:layout_height="45dp"-->
+    <!--                android:layout_below="@id/billing3"-->
+    <!--                android:layout_marginLeft="245dp"-->
+    <!--                android:layout_marginTop="37dp"-->
+    <!--                android:backgroundTint="@color/navey_blue"-->
+    <!--                android:shadowRadius="30"-->
+    <!--                android:text="View Details"-->
+    <!--                android:textColor="@color/white"-->
+    <!--                android:textSize="17sp" />-->
+
+
+
+</RelativeLayout>

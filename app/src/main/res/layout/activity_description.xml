@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DescriptionActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/box"
+                android:layout_width="540dp"
+                android:layout_height="65dp"
+                android:background="@color/navey_blue"
+                android:drawableStart="@drawable/arrow_back"
+                android:drawableLeft="@drawable/arrow_back"
+                android:drawablePadding="30dp"
+                android:paddingLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/tvcar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/box"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Porsche 911 Turbo"
+                android:textColor="@color/navey_blue"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:layout_below="@id/tvcar"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/carlist" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/seater"
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:layout_below="@id/image"
+                android:layout_marginTop="30dp"
+                app:cardBackgroundColor="#1AD3D3D3"
+                app:cardCornerRadius="40dp">
+
+                <TextView
+
+                    android:layout_width="410dp"
+                    android:layout_height="175dp"
+                    android:background="#1AD3D3D3" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="15dp"
+                    android:drawableStart="@drawable/people_outline"
+                    android:drawableLeft="@drawable/people_outline" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="38dp"
+                    android:layout_marginTop="50dp"
+                    android:text="2 seater"
+
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/circle_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/check_circle"
+                    android:drawableLeft="@drawable/check_circle"
+                    android:layout_marginTop="85dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Insurance included"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:layout_marginTop="85dp"
+                    android:layout_marginLeft="50dp"/>
+
+                <TextView
+                    android:id="@+id/circle_check1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/check_circle"
+                    android:drawableLeft="@drawable/check_circle"
+                    android:layout_marginTop="110dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 day rental available"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:layout_marginTop="110dp"
+                    android:layout_marginLeft="50dp"/>
+
+                <TextView
+                    android:id="@+id/circle_check2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/check_circle"
+                    android:drawableLeft="@drawable/check_circle"
+                    android:layout_marginTop="135dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <TextView
+                    android:id="@+id/free"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Free delivery"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:layout_marginTop="135dp"
+                    android:layout_marginLeft="50dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="600dp"
+                    android:background="#4DC0C0C0" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rental includes"
+                android:layout_marginTop="605dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/navey_blue"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="17sp"
+                android:text="Mileage limit"
+                android:textColor="@color/black"
+                android:layout_marginTop="636dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="17sp"
+                android:text="250 km"
+                android:textColor="@color/navey_blue"
+                android:layout_marginTop="636dp"
+                android:layout_marginLeft="341dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="17sp"
+                android:text="Insurance"
+                android:textColor="@color/black"
+                android:layout_marginTop="662dp"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="17sp"
+                android:text="Basic comprehensive"
+                android:textColor="@color/black"
+                android:layout_marginTop="662dp"
+                android:layout_marginLeft="225dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="17sp"
+                android:text="Car color"
+                android:textColor="@color/black"
+                android:layout_marginTop="689dp"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="17sp"
+                android:text="Yellow"
+                android:textColor="@color/black"
+                android:layout_marginTop="689dp"
+                android:layout_marginLeft="345dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="746dp"
+                    android:background="#4DC0C0C0" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Requirements"
+                android:textStyle="bold"
+                android:layout_marginTop="750dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/navey_blue"
+                android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="17sp"
+                    android:text="Minimum age"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="778dp"
+                    android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="17sp"
+                android:text="24 years old"
+                android:textColor="@color/navey_blue"
+                android:textStyle="bold"
+                android:layout_marginTop="778dp"
+                android:layout_marginLeft="300dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="17sp"
+                android:text="Security deposit"
+                android:textColor="@color/black"
+                android:layout_marginTop="810dp"
+                android:layout_marginLeft="20dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="17sp"
+                android:text="Rs.25000"
+                android:textColor="@color/black"
+                android:layout_marginTop="810dp"
+                android:layout_marginLeft="325dp" />
+
+            <LinearLayout
+                android:id="@+id/requirement"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:layout_marginTop="869dp"
+                    android:background="#4DC0C0C0" />
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="887dp"
+                android:layout_marginRight="20dp"
+                android:drawableStart="@drawable/ic_baseline_directions_car_24"
+                android:drawableLeft="@drawable/ic_baseline_directions_car_24"
+                android:drawablePadding="40dp"
+                android:background="#80808080"
+                android:hint="Pickup Location"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/edit_text1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/edit_text"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:drawableStart="@drawable/calendar"
+                android:drawableLeft="@drawable/calendar"
+                android:drawablePadding="40dp"
+                android:background="#80808080"
+                android:hint="Fri, 17 Jun 2022"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edit_text2"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/edit_text1"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:drawableStart="@drawable/calendar"
+                android:drawableLeft="@drawable/calendar"
+                android:drawablePadding="40dp"
+                android:background="#80808080"
+                android:hint="Mon, 20 Jun 2022"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Description"
+                android:textStyle="bold"
+                android:textSize="20sp"
+               android:textColor="@color/navey_blue"
+                android:layout_marginTop="1063dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:id="@+id/covid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="COVID-19 update:the car is disinfected throughly before each trip with Lysol spray and wipes. "
+                android:layout_below="@+id/description"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:id="@+id/porsche"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Porsche 911 Turbo"
+                android:layout_below="@+id/covid"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:id="@+id/costs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Rental cost includes basic comperhensive insurance and standard mileage limit. Excellent condition. Get treated like VIP anywhere you go.Very enjoyable car to drive."
+                android:layout_below="@+id/porsche"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:id="@+id/pickup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="I will try to accomodate the pickup/drop off locations,times."
+                android:layout_below="@+id/costs"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="1370dp"
+                    android:background="#4DC0C0C0"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <View
+                    android:layout_width="320dp"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#1AD3D3D3" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Total:"
+                android:textSize="17sp"
+                android:layout_below="@+id/pickup"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Rs.7,500 / per day"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/pickup"
+                android:layout_marginTop="47dp"
+                android:layout_marginLeft="70dp"
+                android:textColor="@color/navey_blue"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="17sp"
+                android:layout_below="@+id/pickup"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="158dp"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/ok1"
+                android:layout_width="152dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/pickup"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="37dp"
+                android:backgroundTint="@color/navey_blue"
+                android:shadowRadius="30"
+                android:text="Continue"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
